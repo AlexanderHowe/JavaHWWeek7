@@ -4,19 +4,27 @@ public class E5StringManipulationsP5 {
     public static void main(String[] args) {
         String csvLine = "John Doe,22,Computer Science,3.8,2025";
 
-        // Declare the CSV line string
+        String[] fields = csvLine.split(",");
 
-        // Split the string into an array using the comma delimiter
+        String fullName = fields[0];
+        String age = fields[1];
+        String major = fields[2];
+        String gpa = fields[3];
+        String graduationYear = fields[4];
 
-        // Extract student's full name, age, major, GPA, and graduation year
 
-        // Calculate the number of words in the full name
+        int nameWordCount = fullName.split(" ").length;
+        int majorLength = major.length();
 
-        // Calculate the length of the student's major
 
-        // Print the extracted and calculated information
+        System.out.println("Name: " + fullName);
+        System.out.println("Age: " + age);
+        System.out.println("Major: " + major);
+        System.out.println("GPA: " + gpa);
+        System.out.println("Graduation Year: " + graduationYear);
+        System.out.println("Name Word Count: " + nameWordCount);
+        System.out.println("Major Length: " + majorLength);
 
-        // Split the string into an array of fields
 
 
     }
